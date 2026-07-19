@@ -4,11 +4,39 @@
     padding: 0;
 }
 
-main{
-    background-image: url(../imagenes/Registro-imagen.png );
+.main-iniciosesion,.main-recuperarC,.main-registro,.main-restablecer {
+    background-image: url(../imagenes/backgroung-fondo.png );
+    width: 100%;
+    height: 800px;
+}
+.menu{
+    display: flex;
+    margin: 20px 30px 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 600; 
+   
+} 
+.micuenta{
+    color: #fff;
+    font-style: none;
+    padding: 10px 10px 15px;
+    margin: 15px 10px 15px;
 }
 
-/* Formulario */
+a:visited{
+    color: #082b59; 
+ }
+
+
+.icono-inicio-sesion{
+    background-color: #082b59;
+    color: #fff;
+    padding: 2px;
+}
+
+/* Formularios */
 .formulario-inicio{
    position: relative;
    left: 600px;
@@ -16,9 +44,32 @@ main{
    background-color: #fff;
    width: 50%;
    padding: 0px;
-   margin: 0px;
+   top: 20px;
    height: 800px; 
 }
+.formulario-cuenta{
+    position: relative;
+    left: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 50%;
+    top: 20px;
+    padding: 0px;
+    margin: 0px;
+    height: 800px;
+}
+.formulario-recuperar-cuenta, .formulario-cuenta-restablecer{
+   position:relative;
+   left: 400px;
+   background-color: #fff;
+   width: 50%;
+   height:600px;
+   top: 50px;
+   border-radius: 20px;
+   margin: 10px;
+
+}
+
 
 /* imagen logo */
 
@@ -30,7 +81,7 @@ main{
 }
 
 /* texto central */
-.inicio-sesion{
+.inicio-sesion,.crear-cuenta,.restablecer-contraseña {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight : 2px bold;
     color: #001937;
@@ -39,13 +90,14 @@ main{
     padding: auto;
     margin: auto;
 }
-
+/* Subtitulos */
 .subtitulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: #04295d;
     margin-bottom: 25px;
 }
+/* Imput eamil */
 [for|="email"]{
     padding: 50px;
     margin: 50px; 
@@ -54,7 +106,7 @@ main{
     color: #04295d;
 
 }
-
+/* input contraseña */
 [for|="Contraseña"]{
     padding: 50px;
     margin: 50px; 
@@ -63,8 +115,13 @@ main{
     color: #04295d;
     position: relative;
 }
+/* input nombre y apellido */
+.nombre-apellido{
+    position: relative;
+    border-radius: 2px #000;
+}
 
-
+/* Boton de enviar */
 
 [type|="submit"]{
    width: 70%;
@@ -75,11 +132,17 @@ main{
    color: #fff;
 }
 
-[type|="email"],[type|="password"]{
+/* imput email,password, */
+[type|="email"],[type|="password"],[type|="text"],[id|="nombre"]{
     border: none;
     font-size: 18px;
     width: 100%;
 }
+.crear-cuenta{
+
+}
+
+
 
 .cambioContraseña{
     display: flex;
@@ -99,7 +162,7 @@ main{
 
 
 .introducir-correo, 
-.introducir-contraseña {
+.introducir-contraseña , .introducir-codigo, .confirmarContraseña, .introducir-telefono{
   display: flex;
   align-items: center;  
   justify-content: space-around;
@@ -113,14 +176,23 @@ main{
   margin-bottom: 20px;
   margin-left: 100px;
 }
-/* ICONOS REDES*/
 
-.fa-facebook{
+.introducir-nombre{
+    display: flex;
+}
+/* ICONOS */
+
+.fa-facebook, .fa-arrow-left{
     color: #1877f2;
     font-size: 48px;
-    /* margin: 0 25px; */
+    margin: 0 25px;
     text-align: center;
     
+}
+.fa-circle-user{
+     color: #fff;
+    font-size: 25px;
+    margin: 0 5px;
 }
 
 .fa-google{
